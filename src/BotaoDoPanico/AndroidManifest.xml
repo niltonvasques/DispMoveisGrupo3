@@ -22,6 +22,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CadastroActivity"
+            android:label="@string/title_activity_cadastro" >
+        </activity>
+        <activity
+            android:name=".CadastroAlarmeActivity"
+            android:label="@string/title_activity_cadastro_alarme" >
+        </activity>
+        <activity
+            android:name=".EscolhaTipoAlarmeActivity"
+            android:label="@string/title_activity_escolha_tipo_alarme" >
+        </activity>
+        <activity
+            android:name=".CadastroAlarmeEventoActivity"
+            android:label="@string/title_activity_cadastro_alarme_evento" >
+        </activity>
+        <activity
+            android:name=".CadastroAlarmeCodigoActivity"
+            android:label="@string/title_activity_cadastro_alarme_codigo" >
+        </activity>
+        <activity
+            android:name=".ModoFuncionamentoActivity"
+            android:label="@string/title_activity_modo_funcionamento" >
+        </activity>
+        <activity
+            android:name=".AjudaActivity"
+            android:label="@string/title_activity_ajuda" >
+        </activity>
     </application>
 
 </manifest>
