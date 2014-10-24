@@ -7,10 +7,66 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.ufba.matc89.botaodopanico.CadastroActivity" >
+	
+    <EditText 
+        android:id="@+id/edNomeUsuario"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:singleLine="true"
+    	android:inputType="textPersonName"
+    	android:layout_marginTop="43dp"
+    	android:hint="@string/nome"
+    />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edSenha"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edNomeUsuario"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:singleLine="true" 
+	/>
 
+    <EditText
+        android:id="@+id/edConfirmarSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edSenha"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="@string/confirmar_senha"
+        android:inputType="textPassword"
+        android:singleLine="true" 
+	/>
+    
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edConfirmarSenha"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:singleLine="true" 
+	/>
+    
+    <Button
+	    android:id="@+id/btSalvarCadastro"
+	    android:layout_width="105dp"
+	    android:layout_marginTop="43dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="20dp"
+	    android:layout_below="@+id/edEmail"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignBottom="true"
+	    android:layout_marginBottom="61dp"
+	    android:text="@string/cadastrar"
+	    />
 </RelativeLayout>
