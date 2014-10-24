@@ -32,7 +32,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:entries="@array/evento_items" />
+            android:entries="@array/evento_items"
+             />
         
 	    <RelativeLayout
 	        android:id="@+id/relativeLayout2"
