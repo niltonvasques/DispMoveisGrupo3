@@ -12,4 +12,12 @@
     <string name="title_activity_modo_funcionamento">ModoFuncionamentoActivity</string>
     <string name="title_activity_ajuda">AjudaActivity</string>
 
+    <string name="nome">nome</string>
+    <string name="senha">senha</string>
+    <string name="confirmar_senha">confirmar senha</string>
+    <string name="email">email</string>
+    <string name="instalar">Instalar</string>
+    <string name="alterar">Alterar</string>
+    <string name="cadastrar">Cadastrar</string>
+
 </resources>

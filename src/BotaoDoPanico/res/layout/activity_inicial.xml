@@ -8,9 +8,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.ufba.matc89.botaodopanico.InicialActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+	<Button
+	    android:id="@+id/btInstalar"
+	    android:layout_width="250dp"
+	    android:layout_height="60dp"
+	    android:layout_above="@+id/Alterar"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="61dp"
+	    android:text="@string/instalar"
+	/>
+
+	<Button
+	    android:id="@+id/Alterar"
+	    android:layout_width="250"
+	    android:layout_height="60"
+	    android:layout_alignLeft="@+id/btInstalar"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="160dp"
+	    android:text="@string/alterar" />
 
 </RelativeLayout>
