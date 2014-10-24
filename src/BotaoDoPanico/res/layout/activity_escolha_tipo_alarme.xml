@@ -8,9 +8,30 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.ufba.matc89.botaodopanico.EscolhaTipoAlarmeActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <TextView 
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_centerHorizontal="true"
+        style="@style/TextTitle"         
+        android:text="@string/activity_tipo_alarme_title"/>
+         />
+
+    <Button
+        android:id="@+id/activity_alarme_tipo_alarme_btn_evento"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:text="@string/activity_tipo_alarme_btn_evento" />
+
+    <Button
+        android:id="@+id/activity_tipo_alarme_btn_evento"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/activity_alarme_tipo_alarme_btn_evento"
+        android:layout_below="@+id/activity_alarme_tipo_alarme_btn_evento"
+        android:layout_marginTop="37dp"
+        android:text="@string/activity_tipo_alarme_btn_codigo" />
 
 </RelativeLayout>

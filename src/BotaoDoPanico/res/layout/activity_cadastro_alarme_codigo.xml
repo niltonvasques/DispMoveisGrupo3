@@ -6,11 +6,118 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.ufba.matc89.botaodopanico.CadastroAlarmeCodigoActivity" >
+    tools:context=".CadastroAlarmeCodigoActivity" >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView1"
+        style="@style/TextTitle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/activity_alarme_codigo_title" />
+    
+   <RelativeLayout
+       android:id="@+id/relativeLayout2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/textView1"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp" >
+       
+		   <EditText
+		       android:id="@+id/editText1"
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:layout_centerHorizontal="true"
+		       android:ems="10"
+		       android:inputType="numberPassword" >
+		
+		       <requestFocus />
+		   </EditText>
+		
+		   <TableLayout
+		       		android:id="@+id/tableLayout1"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/editText1"
+			        android:layout_centerHorizontal="true"
+			        android:layout_marginTop="30dp"
+			        android:shrinkColumns="*"
+			        android:stretchColumns="*" >
+		
+		        <TableRow
+		            android:id="@+id/tableRow1"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content" >
+		
+		            <Button
+		                android:layout_width="match_parent"
+		                android:layout_height="50dp"
+		                android:text="1" />
+		
+		            <Button
+		                android:layout_width="match_parent"
+		                android:layout_height="50dp"
+		                android:text="2" />
+		
+		            <Button
+		                android:layout_width="match_parent"
+		                android:layout_height="50dp"
+		                android:text="3" />
+		        </TableRow>
+		
+		        <TableRow
+		            android:id="@+id/tableRow2"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content" >
+		
+		            <Button
+		                android:layout_width="match_parent"
+		                android:layout_height="50dp"
+		                android:text="4" />
+		
+		            <Button
+		                android:layout_width="match_parent"
+		                android:layout_height="50dp"
+		                android:text="5" />
+		
+		            <Button
+		                android:layout_width="match_parent"
+		                android:layout_height="50dp"
+		                android:text="6" />
+		        </TableRow>
+		
+		        <TableRow
+		            android:id="@+id/tableRow3"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content" >
+		
+		            <Button
+		                android:layout_width="match_parent"
+		                android:layout_height="50dp"
+		                android:text="7" />
+		
+		            <Button
+		                android:layout_width="match_parent"
+		                android:layout_height="50dp"
+		                android:text="8" />
+		
+		            <Button
+		                android:layout_width="match_parent"
+		                android:layout_height="50dp"
+		                android:text="9" />
+		        </TableRow>
+		    </TableLayout>             
+   </RelativeLayout>
+    <Button
+        android:id="@+id/activity_alarme_tipo_alarme_btn_salvar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+	    android:layout_marginBottom="40dp" 
+	    android:layout_alignParentBottom="true"
+        android:text="@string/salvar" />
+
 
 </RelativeLayout>
