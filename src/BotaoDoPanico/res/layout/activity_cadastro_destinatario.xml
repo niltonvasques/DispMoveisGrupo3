@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.ufba.matc89.botaodopanico.CadastroDestinatarioActivity" >
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        style="@style/TextTitle"         
+        android:text="@string/activity_cadastro_destinatario_txt_title"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"        
+        android:layout_margin="30dp">
+        <LinearLayout 
+            android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginBottom="20dp">
+		    <EditText
+		        android:layout_width="0dp"
+		        android:layout_height="50dp"
+		        android:hint="(00) 0000-0000"
+		        android:layout_weight="9"/>
+		    <Button
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="+" 
+		        android:layout_weight="1"
+		        />
+        </LinearLayout>
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:text="@string/activity_cadastro_destinatario_btn_importar_agenda" />
+    </LinearLayout>
+    
+    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="80dp"
+	        android:text="@string/activity_cadastro_destinatario_btn_adicionar"
+	        android:layout_marginBottom="40dp" 
+	        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

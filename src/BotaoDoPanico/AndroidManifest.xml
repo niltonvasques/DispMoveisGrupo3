@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="14"
         android:targetSdkVersion="20" />
 
     <application
@@ -16,11 +16,6 @@
         <activity
             android:name=".InicialActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".CadastroActivity"
@@ -49,6 +44,15 @@
         <activity
             android:name=".AjudaActivity"
             android:label="@string/title_activity_ajuda" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CadastroDestinatarioActivity"
+            android:label="@string/title_activity_cadastro_destinatario" >
         </activity>
     </application>
 

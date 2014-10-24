@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">BotaoDoPanico</string>
+    <string name="app_name">Botão do Pânico</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_cadastro">CadastroActivity</string>
-    <string name="title_activity_cadastro_alarme">CadastroAlarmeActivity</string>
-    <string name="title_activity_escolha_tipo_alarme">EscolhaTipoAlarmeActivity</string>
-    <string name="title_activity_cadastro_alarme_evento">CadastroAlarmeEventoActivity</string>
-    <string name="title_activity_cadastro_alarme_codigo">CadastroAlarmeCodigoActivity</string>
-    <string name="title_activity_modo_funcionamento">ModoFuncionamentoActivity</string>
-    <string name="title_activity_ajuda">AjudaActivity</string>
-
+    <string name="title_activity_cadastro">Botão do Pânico</string>
+    <string name="title_activity_cadastro_alarme">Botão do Pânico</string>
+    <string name="title_activity_escolha_tipo_alarme">Botão do Pânico</string>
+    <string name="title_activity_cadastro_alarme_evento">Botão do Pânico</string>
+    <string name="title_activity_cadastro_alarme_codigo">Botão do Pânico</string>
+    <string name="title_activity_modo_funcionamento">Botão do Pânico</string>
+    <string name="title_activity_ajuda">Botão do Pânico</string>
+    <string name="title_activity_cadastro_destinatario">Botão do Pânico</string>
+    
     <string name="nome">nome</string>
     <string name="senha">senha</string>
     <string name="confirmar_senha">confirmar senha</string>
@@ -19,5 +20,18 @@
     <string name="instalar">Instalar</string>
     <string name="alterar">Alterar</string>
     <string name="cadastrar">Cadastrar</string>
+    
+    <string name="activity_modo_funcionamento_title">Modo de Funcionamento</string>
+    <string name="activity_modo_funcionamento_btn_background">Background</string>
+    <string name="activity_modo_funcionamento_btn_visivel">Visível</string>
+    
+    <string name="activity_cadastro_destinatario_txt_title">Adicionar Número</string>
+    <string name="activity_cadastro_destinatario_btn_importar_agenda">Importar da Agenda</string>
+    <string name="activity_cadastro_destinatario_btn_adicionar">Adicionar</string>
+    
+    <string name="activity_ajuda_title">Ajuda</string>
+    <string name="activity_ajuda_btn_finalizar">Finalizar</string>
+    
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
 
 </resources>

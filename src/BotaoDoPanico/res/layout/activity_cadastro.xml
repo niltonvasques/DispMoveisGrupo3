@@ -65,8 +65,8 @@
 	    android:layout_marginRight="20dp"
 	    android:layout_below="@+id/edEmail"
 	    android:layout_alignParentRight="true"
-	    android:layout_alignBottom="true"
-	    android:layout_marginBottom="61dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="20dp"
 	    android:text="@string/cadastrar"
 	    />
 </RelativeLayout>

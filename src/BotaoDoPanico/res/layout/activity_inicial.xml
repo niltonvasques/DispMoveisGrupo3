@@ -20,8 +20,8 @@
 
 	<Button
 	    android:id="@+id/Alterar"
-	    android:layout_width="250"
-	    android:layout_height="60"
+	    android:layout_width="250dp"
+	    android:layout_height="60dp"
 	    android:layout_alignLeft="@+id/btInstalar"
 	    android:layout_alignParentBottom="true"
 	    android:layout_marginBottom="160dp"

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="ajuda_items">
+        <item>Modo de uso em background</item>
+        <item>Modo de uso em visualização</item>
+        <item>Como mudar modo de uso</item>
+        <item>Como mudar configurações</item>
+        <item>Sobre</item>
+    </string-array>
+    
+</resources>
