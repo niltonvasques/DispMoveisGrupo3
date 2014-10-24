@@ -40,5 +40,8 @@
     <string name="salvar">Salvar</string>
     <string name="activity_alarme_evento_title">Cadastro de Evento</string>
     <string name="proximo">Próximo</string>
+    <string name="criar_novo_padrao">Criar novo padrão</string>
+    <string name="activity_alarme_tipo_evento_title">Teste seu Alarme</string>
+    <string name="activity_alarme_tipo_evento_teste_aqui">Teste aqui</string>
 
 </resources>
