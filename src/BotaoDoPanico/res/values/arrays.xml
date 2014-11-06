@@ -8,5 +8,17 @@
         <item>Como mudar configurações</item>
         <item>Sobre</item>
     </string-array>
+    <string-array name="evento_items">
+        <item >toque de tela</item>
+        <item >aumentar volume</item>
+        <item >diminuir volume</item>
+    </string-array>
+    <string-array name="evento_qtd_items">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+    </string-array>
     
 </resources>
