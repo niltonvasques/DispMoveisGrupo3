@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.ufba.matc89.botaodopanico.LoginActivity" >
+	
+    <EditText 
+        android:id="@+id/edNomeUsuario"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:singleLine="true"
+    	android:inputType="textPersonName"
+    	android:layout_marginTop="43dp"
+    	android:hint="@string/nome"
+    />
+
+    <EditText
+        android:id="@+id/edSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edNomeUsuario"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:singleLine="true" 
+	/>
+    
+    <LinearLayout
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edEmail"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="43dp" 
+        android:gravity="center_horizontal">
+	    
+	    <Button
+		    android:id="@+id/btLogin"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Login"
+		    />
+	    <Button
+		    android:id="@+id/btCadastrar"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Cadastrar"
+		    />
+        
+    </LinearLayout>
+    
+    
+</RelativeLayout>
