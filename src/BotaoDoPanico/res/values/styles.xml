@@ -16,6 +16,22 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+
+    <!-- Style usado para mostrar o usuário que está logado na aplicação no momento -->
+    <style name="usuarioLogado" >
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">right</item>
+        
+    </style>
+    
+    <!-- Style usado para mostrar a label usuário -->
+    <style name="txtUsuario" >
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        
+    </style>
+    
     
     <style name="TextTitle" >
         <item name="android:textSize">24sp</item>

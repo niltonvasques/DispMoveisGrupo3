@@ -7,15 +7,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class InicialActivity extends ActionBarActivity {
 
+	private TextView editTxtProfile;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+    	ParseUser user = ParseUser.getCurrentUser();
         super.onCreate(savedInstanceState);
+        
+        //Ativa xml de nome activity_inicial
         setContentView(R.layout.activity_inicial);
+        
+        //Pega a Label de id usuarioLogado e armazena em editTxtProfile
+        editTxtProfile = (TextView) findViewById(R.id.usuarioLogado);
+        
+        //Atribui novo valor a Label
+        editTxtProfile.setText("Usuário: "+user.getUsername());
     }
 
 

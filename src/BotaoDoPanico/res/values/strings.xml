@@ -18,6 +18,7 @@
     <string name="confirmar_senha">confirmar senha</string>
     <string name="email">email</string>
     <string name="instalar">Instalar</string>
+    <string name="usuarioLogado">Olá </string>
     <string name="alterar">Alterar</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="activity_modo_funcionamento_title">Modo de Funcionamento</string>

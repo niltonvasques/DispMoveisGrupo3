@@ -7,7 +7,23 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.ufba.matc89.botaodopanico.InicialActivity" >
-
+<!-- 
+    <TextView
+        android:id="@+id/txtUsuario"
+        style="@style/txtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txtUsuario" />
+-->
+    <TextView
+        android:id="@+id/usuarioLogado"
+        style="@style/usuarioLogado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/usuarioLogado" />
+    
 	<Button
 	    android:id="@+id/btInstalar"
 	    android:layout_width="250dp"
