@@ -25,9 +25,18 @@ public class LoginActivity extends Activity {
 		setContentView(R.layout.activity_login);
 		loadComponentsFromXML();
 		
+		ParseUser user = ParseUser.getCurrentUser();
+		
+		if(user != null){
+	    	startActivity(new Intent(LoginActivity.this, InicialActivity.class));
+	    	Toast.makeText(LoginActivity.this, "Bem vindo "+user.getUsername(), Toast.LENGTH_LONG).show();
+	    	finish();
+		}
+		
 		btnLogin.setOnClickListener( new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				ParseUser.enableAutomaticUser();
 				ParseUser.logInInBackground(editTxtUsuario.getText().toString(), editTxtpassword.getText().toString(), new LogInCallback() {
 					  public void done(ParseUser user, ParseException e) {
 					    if (user != null) {

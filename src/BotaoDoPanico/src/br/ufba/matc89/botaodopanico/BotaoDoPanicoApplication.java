@@ -13,10 +13,6 @@ public class BotaoDoPanicoApplication extends Application{
 		super.onCreate();
 		Parse.initialize(this, "pU5pZWL3KWOHTWWk2E0V1Ej54gvABbWHDdk31SQy", "i3FvaOGnXq3IvWJSwkxpdaBT7FyWGL3cvRfK0ih8");
 		
-		ParseObject testObject = new ParseObject("TestObject");
-		testObject.put("foo", "bar");
-		testObject.saveInBackground();
-		Toast.makeText(this, "TestObject created", Toast.LENGTH_LONG).show();
 	}
 
 }
