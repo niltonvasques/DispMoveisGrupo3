@@ -1,0 +1,3 @@
+[submodule "src/ParseUI"]
+	path = src/ParseUI
+	url = git@github.com:ParsePlatform/ParseUI-Android.git

@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.parse.LogInCallback;
 import com.parse.ParseException;
+import com.parse.ParseFacebookUtils;
 import com.parse.ParseUser;
 
 public class LoginActivity extends Activity {
@@ -26,6 +27,8 @@ public class LoginActivity extends Activity {
 		loadComponentsFromXML();
 		
 		ParseUser user = ParseUser.getCurrentUser();
+		
+		ParseFacebookUtils.initialize("348131288692341");
 		
 		if(user != null){
 	    	startActivity(new Intent(LoginActivity.this, InicialActivity.class));
