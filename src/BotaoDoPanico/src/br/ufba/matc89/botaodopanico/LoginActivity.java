@@ -12,6 +12,7 @@ import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseFacebookUtils;
 import com.parse.ParseUser;
+import com.parse.ui.ParseLoginActivity;
 
 public class LoginActivity extends Activity {
 
@@ -19,7 +20,7 @@ public class LoginActivity extends Activity {
 	private EditText editTxtpassword;
 	private Button btnLogin;
 	private Button btnCadastrar;
-	
+	private Button btnLoginFacebook;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -28,7 +29,7 @@ public class LoginActivity extends Activity {
 		
 		ParseUser user = ParseUser.getCurrentUser();
 		
-		ParseFacebookUtils.initialize("348131288692341");
+		
 		
 		if(user != null){
 	    	startActivity(new Intent(LoginActivity.this, InicialActivity.class));
@@ -56,6 +57,14 @@ public class LoginActivity extends Activity {
 			}
 		});
 		
+		btnLoginFacebook.setOnClickListener( new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(LoginActivity.this, FacebookDispatchActivity.class));
+		    	finish();
+			}
+		});
+		
 		btnCadastrar.setOnClickListener( new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -68,6 +77,7 @@ public class LoginActivity extends Activity {
 		editTxtUsuario 	= (EditText) findViewById(R.id.edNomeUsuario);
 		editTxtpassword = (EditText) findViewById(R.id.edSenha);
 		btnLogin 		= (Button) findViewById(R.id.btLogin);
+		btnLoginFacebook = (Button) findViewById(R.id.btFacebook);
 		btnCadastrar 	= (Button) findViewById(R.id.btCadastrar);
 	}
 }

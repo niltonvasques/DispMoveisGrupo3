@@ -4,6 +4,7 @@ import android.app.Application;
 import android.widget.Toast;
 
 import com.parse.Parse;
+import com.parse.ParseFacebookUtils;
 import com.parse.ParseObject;
 
 public class BotaoDoPanicoApplication extends Application{
@@ -12,6 +13,7 @@ public class BotaoDoPanicoApplication extends Application{
 	public void onCreate() {
 		super.onCreate();
 		Parse.initialize(this, "pU5pZWL3KWOHTWWk2E0V1Ej54gvABbWHDdk31SQy", "i3FvaOGnXq3IvWJSwkxpdaBT7FyWGL3cvRfK0ih8");
+		ParseFacebookUtils.initialize("348131288692341");
 		
 	}
 

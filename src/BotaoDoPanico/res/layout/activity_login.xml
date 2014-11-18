@@ -32,15 +32,13 @@
 	/>
     
     <LinearLayout
-        android:layout_width="105dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/edEmail"
         android:layout_marginBottom="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="43dp" 
         android:gravity="center_horizontal">
 	    
 	    <Button
@@ -48,6 +46,12 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:text="Login"
+		    />
+	    <Button
+		    android:id="@+id/btFacebook"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Login Facebook"
 		    />
 	    <Button
 		    android:id="@+id/btCadastrar"
