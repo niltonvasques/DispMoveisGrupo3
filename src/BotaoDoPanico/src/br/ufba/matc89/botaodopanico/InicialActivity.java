@@ -21,7 +21,6 @@
 
 package br.ufba.matc89.botaodopanico;
 
-import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -30,10 +29,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.facebook.LoginActivity;
 import com.parse.ParseUser;
 
 /**
@@ -43,6 +42,9 @@ import com.parse.ParseUser;
 public class InicialActivity extends ActionBarActivity {
 	private TextView emailTextView;
 	private TextView nameTextView;
+	
+	private Button btnInstalar;
+	private Button btnAlterar;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,15 @@ public class InicialActivity extends ActionBarActivity {
 		setContentView(R.layout.activity_profile);
 		emailTextView = (TextView) findViewById(R.id.profile_email);
 		nameTextView = (TextView) findViewById(R.id.profile_name);
+		btnInstalar = (Button) findViewById(R.id.btInstalar);
+		
+		btnInstalar.setOnClickListener( new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(InicialActivity.this, CadastroDestinatarioActivity.class));
+				
+			}
+		});
 
 	}
 
