@@ -1,5 +1,8 @@
 package br.ufba.matc89.botaodopanico;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -10,9 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.parse.ParseException;
-import com.parse.ParseUser;
-import com.parse.SignUpCallback;
+import com.parse.*;
 
 public class CadastroActivity extends ActionBarActivity {
 
@@ -21,6 +22,7 @@ public class CadastroActivity extends ActionBarActivity {
 	private EditText editTxtConfirmaPassword;
 	private EditText editTxtemail;
 	private Button btnCadastrar;
+	private ArrayList<ParseObject> log = new ArrayList<ParseObject>();
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +59,7 @@ public class CadastroActivity extends ActionBarActivity {
 				user.setUsername(usuario);
 				user.setPassword(pass);
 				user.setEmail(email);
-				  
+				
 				// other fields can be set just like with ParseObject
 				//user.put("phone", "650-555-0000");
 				  
@@ -73,10 +75,36 @@ public class CadastroActivity extends ActionBarActivity {
 				    }
 				  }
 				});
+				
+				createLogParse(user);
+				
 			}
+			
 		});
 	}
-
+	
+	private void createLogParse(ParseUser user){
+		
+		ParseObject logObj = new ParseObject("Log");
+		logObj.put("logUser", "");
+		logObj.put("idUser", user.getObjectId());
+		
+		log.add(logObj);
+		
+		ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Log");
+		query.whereContains("idUser", user.getObjectId());
+		
+		query.findInBackground(new FindCallback<ParseObject>() {
+			@Override
+			public void done(List<ParseObject> arg0, ParseException arg1) {
+				for (ParseObject parseObject : arg0) {
+					log.add(parseObject);
+				}
+			}
+		});
+	
+	}
+	
 	private void loadComponentsFromXML() {
 		editTxtUsuario = (EditText) findViewById(R.id.edNomeUsuario);
 		editTxtpassword = (EditText) findViewById(R.id.edSenha);
