@@ -11,6 +11,6 @@ public class FacebookDispatchActivity extends ParseLoginDispatchActivity {
 
 	@Override
 	protected Class<?> getTargetClass() {
-		return SampleProfileActivity.class;
+		return InicialActivity.class;
 	}
 }

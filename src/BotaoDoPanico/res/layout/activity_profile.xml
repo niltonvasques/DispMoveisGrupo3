@@ -7,12 +7,34 @@
     android:paddingBottom="@dimen/com_parse_ui_vertical_margin"
     android:gravity="center"
     android:orientation="vertical">
+    
+     <TextView
+		android:id="@+id/profile_name"
+		style="@style/usuarioLogado"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:text="@string/usuarioLogado" />
 
     <include
         layout="@layout/com_parse_ui_parse_login_app_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"/>
+    
+	<Button
+	    android:id="@+id/btInstalar"
+	    android:layout_width="250dp"
+	    android:layout_height="60dp"
+	    android:text="@string/instalar"
+	/>
+
+	<Button
+	    android:id="@+id/Alterar"
+	    android:layout_width="250dp"
+	    android:layout_height="60dp"
+	    android:text="@string/alterar" />
+    
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,18 +43,7 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/profile_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/ParseLoginUI.TextView"
-            android:text="@string/profile_title_logged_in" />
 
-        <TextView
-            android:id="@+id/profile_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/ParseLoginUI.TextView" />
 
         <TextView
             android:id="@+id/profile_email"
@@ -40,10 +51,5 @@
             android:layout_height="wrap_content"
             style="@style/ParseLoginUI.TextView" />
 
-        <Button
-            android:id="@+id/logout_button"
-            style="@style/ParseLoginUI.Button"
-            android:layout_marginTop="@dimen/com_parse_ui_large_vertical_spacing"
-            android:text="@string/profile_logout_button_label"/>
     </LinearLayout>
 </LinearLayout>

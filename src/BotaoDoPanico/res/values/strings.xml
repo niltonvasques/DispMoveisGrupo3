@@ -9,7 +9,6 @@
     <string name="twitter_consumer_secret">YOUR_TWITTER_CONSUMER_SECRET</string>
 
     <string name="app_name">Botão do Pânico</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="action_logout">Sair</string>
     <string name="title_activity_cadastro">Botão do Pânico</string>
@@ -51,7 +50,7 @@
     <string name="title_activity_facebook">FacebookActivity</string>
     
     <string name="profile_logo_content_description">Logo</string>
-    <string name="profile_title_logged_in">Your are logged in as</string>
-    <string name="profile_logout_button_label">Log out</string>
+    <string name="profile_title_logged_in">Você está logado como</string>
+    <string name="profile_logout_button_label">Sair</string>
 
 </resources>
