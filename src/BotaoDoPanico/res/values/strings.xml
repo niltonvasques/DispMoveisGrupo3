@@ -33,6 +33,7 @@
     <string name="activity_cadastro_destinatario_txt_title">Adicionar Número</string>
     <string name="activity_cadastro_destinatario_btn_importar_agenda">Importar da Agenda</string>
     <string name="activity_cadastro_destinatario_btn_adicionar">Adicionar</string>
+    <string name="activity_cadastro_destinatario_btn_salvar">Salvar</string>
     <string name="activity_ajuda_title">Ajuda</string>
     <string name="activity_ajuda_btn_finalizar">Finalizar</string>
     <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
@@ -48,6 +49,7 @@
     <string name="activity_alarme_tipo_evento_teste_aqui">Teste aqui</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_facebook">FacebookActivity</string>
+    
     
     <string name="profile_logo_content_description">Logo</string>
     <string name="profile_title_logged_in">Você está logado como</string>

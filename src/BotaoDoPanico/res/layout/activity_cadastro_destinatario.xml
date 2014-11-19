@@ -15,7 +15,8 @@
         style="@style/TextTitle"         
         android:text="@string/activity_cadastro_destinatario_txt_title"/>
     
-    <LinearLayout 
+    <LinearLayout
+        android:id="@+id/linAdd" 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"        
@@ -26,11 +27,19 @@
 	        android:orientation="horizontal"
 	        android:layout_marginBottom="20dp">
 		    <EditText
+		        android:id="@+id/edNome"
+		        android:layout_width="0dp"
+		        android:layout_height="50dp"
+		        android:hint="João da Silva"
+		        android:layout_weight="9"/>
+		    <EditText
+		        android:id="@+id/edNumero"
 		        android:layout_width="0dp"
 		        android:layout_height="50dp"
 		        android:hint="(00) 0000-0000"
 		        android:layout_weight="9"/>
 		    <Button
+		        android:id="@+id/btAdicionar"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:text="+" 
@@ -38,15 +47,25 @@
 		        />
         </LinearLayout>
 	    <Button
+	        android:id="@+id/btImportarAgenda"
 	        android:layout_width="match_parent"
 	        android:layout_height="50dp"
 	        android:text="@string/activity_cadastro_destinatario_btn_importar_agenda" />
     </LinearLayout>
     
+    <ListView 
+        android:id="@+id/listViewContatos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linAdd"
+	    android:layout_above="@+id/btSalvar">
+    </ListView>
+    
     <Button
+        	android:id="@id/btSalvar"
 	        android:layout_width="match_parent"
 	        android:layout_height="80dp"
-	        android:text="@string/activity_cadastro_destinatario_btn_adicionar"
+	        android:text="@string/activity_cadastro_destinatario_btn_salvar"
 	        android:layout_marginBottom="40dp" 
 	        android:layout_alignParentBottom="true"/>
 
