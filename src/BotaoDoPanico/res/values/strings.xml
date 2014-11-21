@@ -23,9 +23,9 @@
     <string name="senha">senha</string>
     <string name="confirmar_senha">confirmar senha</string>
     <string name="email">email</string>
-    <string name="instalar">Instalar</string>
+    <string name="configurar">Configurar</string>
     <string name="usuarioLogado">Olá </string>
-    <string name="alterar">Alterar</string>
+    <string name="logAlerta">Log Alerta</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="activity_modo_funcionamento_title">Modo de Funcionamento</string>
     <string name="activity_modo_funcionamento_btn_background">Background</string>

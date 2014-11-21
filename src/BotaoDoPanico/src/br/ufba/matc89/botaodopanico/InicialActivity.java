@@ -21,6 +21,8 @@
 
 package br.ufba.matc89.botaodopanico;
 
+import java.util.Date;
+
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -32,7 +34,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import com.parse.ParseObject;
 import com.parse.ParseUser;
 
 /**
@@ -43,8 +45,8 @@ public class InicialActivity extends ActionBarActivity {
 	private TextView emailTextView;
 	private TextView nameTextView;
 	
-	private Button btnInstalar;
-	private Button btnAlterar;
+	private Button btnConfigurar;
+	private Button btnLogAlerta;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -53,13 +55,29 @@ public class InicialActivity extends ActionBarActivity {
 		setContentView(R.layout.activity_profile);
 		emailTextView = (TextView) findViewById(R.id.profile_email);
 		nameTextView = (TextView) findViewById(R.id.profile_name);
-		btnInstalar = (Button) findViewById(R.id.btInstalar);
+		btnConfigurar = (Button) findViewById(R.id.btConfigurar);
+		btnLogAlerta = (Button) findViewById(R.id.btLogAlerta);
 		
-		btnInstalar.setOnClickListener( new OnClickListener() {
+		btnConfigurar.setOnClickListener( new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(InicialActivity.this, CadastroDestinatarioActivity.class));
 				
+			}
+		});
+		
+		btnLogAlerta.setOnClickListener( new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				ParseObject logObj = new ParseObject("Log");
+				logObj.put("user", ParseUser.getCurrentUser().getObjectId());
+				logObj.put("tipo", "AlertaEnviada");
+				logObj.put("mensagem", "Uma mensagem foi enviada para os contatos desse usuário");
+				logObj.put("dataEnvio", new Date());
+				
+				logObj.saveInBackground();
+				
+				Toast.makeText(InicialActivity.this, "Teste Feito!!!", Toast.LENGTH_LONG).show();
 			}
 		});
 

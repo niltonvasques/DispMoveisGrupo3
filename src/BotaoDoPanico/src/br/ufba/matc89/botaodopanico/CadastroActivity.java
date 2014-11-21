@@ -88,8 +88,9 @@ public class CadastroActivity extends ActionBarActivity {
 		ParseObject logObj = new ParseObject("Log");
 		logObj.put("logUser", "");
 		logObj.put("idUser", user.getObjectId());
+		logObj.saveInBackground();
 		
-		log.add(logObj);
+		/*log.add(logObj);
 		
 		ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Log");
 		query.whereContains("idUser", user.getObjectId());
@@ -101,7 +102,7 @@ public class CadastroActivity extends ActionBarActivity {
 					log.add(parseObject);
 				}
 			}
-		});
+		});*/
 	
 	}
 	
