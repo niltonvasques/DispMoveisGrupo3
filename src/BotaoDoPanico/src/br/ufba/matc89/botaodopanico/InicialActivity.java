@@ -78,6 +78,8 @@ public class InicialActivity extends ActionBarActivity {
 				logObj.saveInBackground();
 				
 				Toast.makeText(InicialActivity.this, "Teste Feito!!!", Toast.LENGTH_LONG).show();
+				
+				startActivity(new Intent(InicialActivity.this, CadastroAlarmeEventoActivity.class));
 			}
 		});
 

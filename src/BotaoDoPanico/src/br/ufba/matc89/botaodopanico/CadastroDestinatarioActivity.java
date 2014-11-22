@@ -204,13 +204,13 @@ public class CadastroDestinatarioActivity extends ActionBarActivity {
 							}catch(Exception e){
 								
 							}
-							startActivity(new Intent(CadastroDestinatarioActivity.this, InicialActivity.class));
+							startActivity(new Intent(CadastroDestinatarioActivity.this, CadastroAlarmeEventoActivity.class));
 							finish();
 						}
 					});
 				}else{
 					Toast.makeText(CadastroDestinatarioActivity.this, "Erro! Os contatos não foram salvos!!", Toast.LENGTH_LONG).show();
-					startActivity(new Intent(CadastroDestinatarioActivity.this, InicialActivity.class));
+					startActivity(new Intent(CadastroDestinatarioActivity.this, CadastroAlarmeEventoActivity.class));
 					finish();
 				}
 				

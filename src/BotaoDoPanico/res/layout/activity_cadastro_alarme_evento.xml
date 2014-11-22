@@ -16,92 +16,105 @@
         android:layout_centerHorizontal="true"
         android:text="@string/activity_alarme_evento_title" />
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout1"
+    <TextView
+        android:id="@+id/TextView02"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp" >
+        android:layout_alignLeft="@+id/TextView03"
+        android:layout_centerVertical="true"
+        android:text="@string/volBaixo" />
 
-        <Spinner
-            android:id="@+id/activity_alarme_evento_options"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:entries="@array/evento_items"
-             />
-        
-	    <RelativeLayout
-	        android:id="@+id/relativeLayout2"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/activity_alarme_evento_options"
-	        android:layout_centerHorizontal="true"
-	        android:layout_marginTop="10dp" >
-	        
-			    <Spinner
-		            android:id="@+id/activity_alarme_evento_qtd_options"
-		            android:layout_width="180dp"
-		            android:layout_height="wrap_content"
-		            android:layout_alignParentLeft="true"
-		            android:layout_alignParentTop="true"
-		            android:entries="@array/evento_qtd_items" />
-			    <Button
-			        android:layout_width="wrap_content"
-			        android:layout_height="wrap_content"
-			        android:text="+"
-			        android:layout_alignParentRight="true" 
-			        android:layout_weight="1"
-			        />
-	   </RelativeLayout>
-	   
-		 <TableLayout
-		      	android:id="@+id/activity_alarme_evento_table"
-		        android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_below="@+id/relativeLayout2"
-		        android:layout_centerHorizontal="true"
-		        android:layout_marginTop="30dp" >
-		
-		       <TableRow
-		           android:id="@+id/tableRow1"
-		           style="@style/AppBaseTheme"
-		           android:layout_width="fill_parent"
-		           android:layout_height="wrap_content"
-		           android:background="#ccc" >
-		           
-				    <TextView
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content"
-				        android:layout_weight="0.2"
-				        android:background="@drawable/border"
-				        android:textColor="#000"
-				        android:layout_centerHorizontal="true"
-				        android:text="QTD" />
-				    
-				    <TextView
-				        android:layout_width="match_parent"
-				        android:layout_height="wrap_content"
-				        android:layout_weight="0.8"
-				        android:background="@drawable/border"
-				        android:textColor="#000"
-				        android:layout_centerHorizontal="true"
-				        android:text="Evento" />			           
-		           
-		       </TableRow>
-		</TableLayout>
-
-    </RelativeLayout>
-    
-    <Button
-        android:id="@+id/activity_alarme_evento_proximo"
+    <TextView
+        android:id="@+id/TextView03"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView02"
+        android:text="@string/volCima" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BtnEventoOpcao2"
+        android:layout_below="@+id/TextView03"
+        android:text="@string/volBaixo" />
+
+    <Button
+        android:id="@+id/BtnEventoOpcao2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/TextView04"
+        android:layout_below="@+id/TextView01"
+        android:text="@string/btnOp2"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView05"
+        android:layout_alignLeft="@+id/BtnEventoOpcao3"
+        android:text="@string/volBaixo" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView06"
+        android:layout_alignLeft="@+id/BtnEventoOpcao3"
+        android:text="@string/volBaixo" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BtnEventoOpcao3"
+        android:layout_alignLeft="@+id/BtnEventoOpcao3"
+        android:text="@string/volCima" />
+
+    <Button
+        android:id="@+id/BtnEventoOpcao3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView1"
         android:layout_alignParentBottom="true"
-        android:text="@string/proximo" />
+        android:layout_marginBottom="26dp"
+        android:text="@string/btnOp3"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/BtnEventoOpcao1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/TextView02"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_marginBottom="14dp"
+        android:text="@string/btnOp1"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtE1Op1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtE3Op1"
+        android:layout_alignLeft="@+id/BtnEventoOpcao1"
+        android:text="@string/volCima" />
+
+    <TextView
+        android:id="@+id/txtE2Op1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtE1Op1"
+        android:layout_alignLeft="@+id/BtnEventoOpcao1"
+        android:text="@string/volCima" />
+
+    <TextView
+        android:id="@+id/txtE3Op1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BtnEventoOpcao1"
+        android:layout_alignLeft="@+id/BtnEventoOpcao1"
+        android:text="@string/volBaixo" />
 
 </RelativeLayout>

@@ -42,10 +42,13 @@
     <string name="activity_tipo_alarme_btn_codigo">Código</string>
     <string name="activity_alarme_codigo_title">Cadastro de Senha</string>
     <string name="salvar">Salvar</string>
-    <string name="activity_alarme_evento_title">Cadastro de Evento</string>
+    <string name="cancelar">Cancelar Escolha</string>
+    <string name="voltar">Voltar p/ tela inicial</string>
+    <string name="activity_alarme_evento_title">Escolha de Evento</string>
     <string name="proximo">Próximo</string>
     <string name="criar_novo_padrao">Criar novo padrão</string>
     <string name="activity_alarme_tipo_evento_title">Teste seu Alarme</string>
+    <string name="alarme_correto">...</string>
     <string name="activity_alarme_tipo_evento_teste_aqui">Teste aqui</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_facebook">FacebookActivity</string>
@@ -55,4 +58,12 @@
     <string name="profile_title_logged_in">Você está logado como</string>
     <string name="profile_logout_button_label">Sair</string>
 
+    <string name="volCima">Volume de aumentar</string>
+    <string name="volBaixo">Volume de diminuir</string>
+    
+    <string name="btnOp1">Opção 1</string>
+    <string name="btnOp2">Opção 2</string>
+    <string name="btnOp3">Opção 3</string>
+    
+    
 </resources>

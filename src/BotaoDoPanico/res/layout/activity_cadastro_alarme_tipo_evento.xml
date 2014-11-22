@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".CadastroAlarmeCodigoActivity" >
+    tools:context=".TestarEvento" >
 
     <TextView
         android:id="@+id/textView1"
@@ -21,18 +21,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_below="@+id/textView1">
-        <Button
-	        android:id="@+id/activity_alarme_tipo_alarme_brn_novo_padrao"
-	        android:layout_width="match_parent"
-	        android:layout_height="60dp"
-		    android:layout_marginBottom="40dp" 
-		    android:layout_alignParentBottom="true"
-	        android:text="@string/criar_novo_padrao" />
-        <TextView 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/activity_alarme_tipo_evento_teste_aqui"/>
     </LinearLayout>
     
   
