@@ -41,7 +41,8 @@ public class TestarEvento extends ActionBarActivity {
 		btnCancela.setOnClickListener( new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				startActivity(new Intent(TestarEvento.this, CadastroAlarmeEventoActivity.class));			
+				startActivity(new Intent(TestarEvento.this, CadastroAlarmeEventoActivity.class));		
+				finish();
 			}
 		});
 		
@@ -55,6 +56,7 @@ public class TestarEvento extends ActionBarActivity {
 					ParseUser.getCurrentUser().save();
 					Toast.makeText(TestarEvento.this, "Alarme salvo com sucesso!", Toast.LENGTH_LONG).show();
 					startActivity(new Intent(TestarEvento.this, InicialActivity.class));
+					finish();
 				} catch (ParseException e) {
 					// TODO Auto-generated catch block
 					Toast.makeText(TestarEvento.this, "Erro ao salvar alarme!", Toast.LENGTH_LONG).show();
@@ -67,6 +69,7 @@ public class TestarEvento extends ActionBarActivity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(TestarEvento.this, InicialActivity.class));
+				finish();
 			}
 		});
 	}

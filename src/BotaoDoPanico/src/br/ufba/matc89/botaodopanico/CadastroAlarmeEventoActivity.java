@@ -35,7 +35,8 @@ public class CadastroAlarmeEventoActivity extends ActionBarActivity {
 				b.putInt("tipo", 1);
 
 				intent.putExtras(b);
-				startActivity(intent);				
+				startActivity(intent);
+				finish();
 			}
 		});
 		
@@ -47,7 +48,8 @@ public class CadastroAlarmeEventoActivity extends ActionBarActivity {
 				b.putInt("tipo", 2);
 
 				intent.putExtras(b);
-				startActivity(intent);				
+				startActivity(intent);
+				finish();
 			}
 		});
 		
@@ -59,7 +61,8 @@ public class CadastroAlarmeEventoActivity extends ActionBarActivity {
 				b.putInt("tipo", 3);
 
 				intent.putExtras(b);
-				startActivity(intent);				
+				startActivity(intent);
+				finish();
 			}
 		});
 		
