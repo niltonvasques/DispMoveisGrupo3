@@ -1,6 +1,7 @@
 package br.ufba.matc89.botaodopanico;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import android.content.Intent;
@@ -116,6 +117,14 @@ public class EventoActivity extends ActionBarActivity {
 	
 	private void sendAlerta(){
 		String msg = "Estou em perigo!";
+		
+		ParseObject logObj = new ParseObject("Log");
+		logObj.put("user", ParseUser.getCurrentUser().getObjectId());
+		logObj.put("tipo", "AlertaEnviada");
+		logObj.put("mensagem", "Uma mensagem foi enviada para os contatos desse usuário");
+		logObj.put("dataEnvio", new Date());
+		
+		logObj.saveInBackground();
 //		String nome = ParseUser.getCurrentUser().getUsername();
 		for (ParseObject contato : contatos) {
 			String number = contato.getString("numero");
