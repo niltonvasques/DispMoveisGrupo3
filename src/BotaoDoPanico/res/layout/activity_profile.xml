@@ -1,55 +1,57 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="@dimen/com_parse_ui_vertical_margin"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/com_parse_ui_vertical_margin"
     android:paddingLeft="@dimen/com_parse_ui_horizontal_margin"
     android:paddingRight="@dimen/com_parse_ui_horizontal_margin"
-    android:paddingBottom="@dimen/com_parse_ui_vertical_margin"
-    android:gravity="center"
-    android:orientation="vertical">
-    
-     <TextView
-		android:id="@+id/profile_name"
-		style="@style/usuarioLogado"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_centerHorizontal="true"
-		android:text="@string/usuarioLogado" />
+    android:paddingTop="@dimen/com_parse_ui_vertical_margin" >
+
+    <TextView
+        android:id="@+id/profile_name"
+        style="@style/usuarioLogado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/usuarioLogado" />
 
     <include
-        layout="@layout/com_parse_ui_parse_login_app_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"/>
-    
-	<Button
-	    android:id="@+id/btConfigurar"
-	    android:layout_width="250dp"
-	    android:layout_height="60dp"
-	    android:text="@string/configurar"
-	/>
+        android:layout_weight="0.5"
+        layout="@layout/com_parse_ui_parse_login_app_logo" />
 
-	<Button
-	    android:id="@+id/btLogAlerta"
-	    android:layout_width="250dp"
-	    android:layout_height="60dp"
-	    android:text="@string/logAlerta" />
-    
+    <Button
+        android:id="@+id/btConfigurar"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/configurar" />
+
+    <Button
+        android:id="@+id/btLogAlerta"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/logAlerta" />
+
+    <Button
+        android:id="@+id/btBackground"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Ativar" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.5"
         android:gravity="center"
-        android:orientation="vertical">
-
-
+        android:orientation="vertical" >
 
         <TextView
             android:id="@+id/profile_email"
+            style="@style/ParseLoginUI.TextView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/ParseLoginUI.TextView" />
-
+            android:layout_height="wrap_content" />
     </LinearLayout>
+
 </LinearLayout>

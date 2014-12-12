@@ -47,6 +47,7 @@ public class InicialActivity extends ActionBarActivity {
 	
 	private Button btnConfigurar;
 	private Button btnLogAlerta;
+	private Button btnBackground;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,7 @@ public class InicialActivity extends ActionBarActivity {
 		nameTextView = (TextView) findViewById(R.id.profile_name);
 		btnConfigurar = (Button) findViewById(R.id.btConfigurar);
 		btnLogAlerta = (Button) findViewById(R.id.btLogAlerta);
+		btnBackground = (Button) findViewById(R.id.btBackground);
 		
 		btnConfigurar.setOnClickListener( new OnClickListener() {
 			@Override
@@ -72,17 +74,34 @@ public class InicialActivity extends ActionBarActivity {
 				ParseObject logObj = new ParseObject("Log");
 				logObj.put("user", ParseUser.getCurrentUser().getObjectId());
 				logObj.put("tipo", "AlertaEnviada");
-				logObj.put("mensagem", "Uma mensagem foi enviada para os contatos desse usuário");
+				logObj.put("mensagem", "Uma mensagem foi enviada para os contatos desse usuï¿½rio");
 				logObj.put("dataEnvio", new Date());
 				
 				logObj.saveInBackground();
 				
 				Toast.makeText(InicialActivity.this, "Teste Feito!!!", Toast.LENGTH_LONG).show();
 				
-				startActivity(new Intent(InicialActivity.this, CadastroAlarmeEventoActivity.class));
+				int tipo = ParseUser.getCurrentUser().getInt("eventoEscolha");
+				
+				System.out.println("Evento tipo "+tipo);
+				
+				Intent intent = new Intent(InicialActivity.this, TestarEvento.class);
+				Bundle b = new Bundle();
+				b.putInt("tipo", tipo);
+
+				intent.putExtras(b);
+				startActivity(intent);
 			}
 		});
-
+		
+		btnBackground.setOnClickListener( new OnClickListener() {
+			@Override
+			public void onClick(View v) {			
+				System.out.println("btnBackground click");
+				Intent it = new Intent(InicialActivity.this, EventoActivity.class);
+				startActivity(it);
+			}
+		});
 	}
 
 	@Override

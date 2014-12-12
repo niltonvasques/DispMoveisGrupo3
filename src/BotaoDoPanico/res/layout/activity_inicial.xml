@@ -24,22 +24,32 @@
         android:layout_centerHorizontal="true"
         android:text="@string/usuarioLogado" />
     
+	<Button
+	    android:id="@+id/btConfigurar"
+	    android:layout_height="60dp"
+	    android:layout_width="250dp"
+	    android:layout_above="@+id/btLogAlerta"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/configurar"
+	/>
+	
     <Button
 	    android:id="@+id/btLogAlerta"
 	    android:layout_width="250dp"
 	    android:layout_height="60dp"
-	    android:layout_alignParentBottom="true"
-	    android:layout_marginBottom="160dp"
+	    android:layout_centerInParent="true"
 	    android:layout_centerHorizontal="true"
 	    android:text="@string/logAlerta" />
     
+	
 	<Button
-	    android:id="@+id/btConfigurar"
+	    android:id="@+id/btBackground"
 	    android:layout_height="60dp"
-	    android:layout_above="@+id/Alterar"
+	    android:layout_width="250dp"
+	    android:layout_below="@+id/btLogAlerta"
 	    android:layout_centerHorizontal="true"
 	    android:layout_marginBottom="61dp"
-	    android:text="@string/configurar"
+	    android:text="Background"
 	/>
 
 	
