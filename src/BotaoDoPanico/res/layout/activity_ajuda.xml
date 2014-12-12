@@ -30,7 +30,8 @@
         android:id="@id/activity_ajuda_btn_finalizar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="@string/activity_proximo"
+        android:text="Menu Inicial"
+        android:visibility="invisible"
         android:layout_marginBottom="40dp" 
         android:layout_alignParentBottom="true"/>
 

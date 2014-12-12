@@ -25,12 +25,13 @@ public class TermoDeContratoActivity extends ActionBarActivity {
 		botaoProx.setOnClickListener( new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				if (cbAceito.isChecked())
+				if (cbAceito.isChecked()){
 					startActivity(new Intent(TermoDeContratoActivity.this, FacebookDispatchActivity.class));
+					finish();
 					//startActivity(new Intent(TermoDeContratoActivity.this, InicialActivity.class));
-				else{
-					System.out.println("Para utilizar nossos serviços, você deve concordar com os Termos de Serviço");
-					Toast.makeText(TermoDeContratoActivity.this, "Para utilizar nossos serviços, você deve concordar com os Termos de Serviço", Toast.LENGTH_LONG).show();
+				}else{
+					System.out.println("Para utilizar nossos serviï¿½os, vocï¿½ deve concordar com os Termos de Serviï¿½o");
+					Toast.makeText(TermoDeContratoActivity.this, "Para utilizar nossos serviï¿½os, vocï¿½ deve concordar com os Termos de Serviï¿½o", Toast.LENGTH_LONG).show();
 				}
 			}
 		});

@@ -26,7 +26,7 @@ public class InstalacaoActivity extends ActionBarActivity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(InstalacaoActivity.this, TermoDeContratoActivity.class));
-				
+				finish();
 			}
 		});
 		
@@ -34,7 +34,6 @@ public class InstalacaoActivity extends ActionBarActivity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(InstalacaoActivity.this, AjudaActivity.class));
-				
 			}
 		});
 	}

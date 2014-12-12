@@ -33,8 +33,7 @@ public class AjudaActivity extends ActionBarActivity {
 		botaoProx.setOnClickListener( new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				startActivity(new Intent(AjudaActivity.this, TermoDeContratoActivity.class));
-				
+				startActivity(new Intent(AjudaActivity.this, TelaMain.class));	
 			}
 		});
 	}

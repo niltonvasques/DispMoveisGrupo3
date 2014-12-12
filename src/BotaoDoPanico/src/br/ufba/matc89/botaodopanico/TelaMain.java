@@ -24,6 +24,7 @@ public class TelaMain extends ActionBarActivity {
 			startActivity(new Intent(TelaMain.this, InstalacaoActivity.class));
 		else
 			startActivity(new Intent(TelaMain.this, FacebookDispatchActivity.class));
+		finish();
 		
 	}
 
