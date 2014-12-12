@@ -62,8 +62,11 @@ public class AjudaActivity extends ActionBarActivity {
 		
 		@Override
 		public Object getChild(int groupPosition, int childPosition) {
-			
-			return getString(R.string.lorem_ipsum);
+			if (childPosition == 1)
+				return getString(R.string.ajuda_modo_de_uso);
+			if (childPosition == 2)
+				return getString(R.string.ajuda_configuracao);
+			return getString(R.string.ajuda_sobre);
 		}
 
 		@Override

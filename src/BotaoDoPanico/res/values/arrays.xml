@@ -2,10 +2,8 @@
 <resources>
     <string-array
         name="ajuda_items">
-        <item>Modo de uso em background</item>
-        <item>Modo de uso em visualização</item>
-        <item>Como mudar modo de uso</item>
-        <item>Como mudar configurações</item>
+        <item>Modo de uso</item>
+        <item>Configurações</item>
         <item>Sobre</item>
     </string-array>
     <string-array name="evento_items">
@@ -17,8 +15,6 @@
         <item >1</item>
         <item >2</item>
         <item >3</item>
-        <item >4</item>
-        <item >5</item>
     </string-array>
     
 </resources>

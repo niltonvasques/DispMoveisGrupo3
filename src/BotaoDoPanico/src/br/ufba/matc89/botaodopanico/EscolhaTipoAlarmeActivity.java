@@ -10,7 +10,7 @@ public class EscolhaTipoAlarmeActivity extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_cadastro_alarme);
+		setContentView(R.layout.activity_instalacao);
 	}
 
 	@Override

@@ -8,30 +8,33 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.Toast;
 
-public class TermoDeContratoActivity extends ActionBarActivity {
-	private Button botaoProx;
-	private CheckBox cbAceito;
+public class InstalacaoActivity extends ActionBarActivity {
+
+	private Button btnCadastro;
+	private Button btnAjuda;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_termo_de_contrato);
-		botaoProx = (Button) findViewById(R.id.button1);
-		cbAceito = (CheckBox) findViewById(R.id.checkBoxTermoServ);
+		setContentView(R.layout.activity_instalacao);
 		
-		botaoProx.setOnClickListener( new OnClickListener() {
+		btnCadastro = (Button) findViewById(R.id.btnCadastro);
+		btnAjuda = (Button) findViewById(R.id.btnAjuda);
+		
+		btnCadastro.setOnClickListener( new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				if (cbAceito.isChecked())
-					startActivity(new Intent(TermoDeContratoActivity.this, FacebookDispatchActivity.class));
-					//startActivity(new Intent(TermoDeContratoActivity.this, InicialActivity.class));
-				else{
-					System.out.println("Para utilizar nossos serviços, você deve concordar com os Termos de Serviço");
-					Toast.makeText(TermoDeContratoActivity.this, "Para utilizar nossos serviços, você deve concordar com os Termos de Serviço", Toast.LENGTH_LONG).show();
-				}
+				startActivity(new Intent(InstalacaoActivity.this, TermoDeContratoActivity.class));
+				
+			}
+		});
+		
+		btnAjuda.setOnClickListener( new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(InstalacaoActivity.this, AjudaActivity.class));
+				
 			}
 		});
 	}
@@ -39,7 +42,7 @@ public class TermoDeContratoActivity extends ActionBarActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.modo_funcionamento, menu);
+		getMenuInflater().inflate(R.menu.cadastro_alarme, menu);
 		return true;
 	}
 

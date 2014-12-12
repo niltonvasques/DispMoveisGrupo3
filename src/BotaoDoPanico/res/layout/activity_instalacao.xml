@@ -13,25 +13,23 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         style="@style/TextTitle"         
-        android:text="@string/activity_tipo_alarme_title"/>
-         />
+        android:text="@string/activity_instalacao"/>
 
     <Button
-        android:id="@+id/activity_alarme_tipo_alarme_btn_evento"
+        android:id="@+id/btnCadastro"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="97dp"
-        android:text="@string/activity_tipo_alarme_btn_evento" />
+        android:text="@string/activity_cadastro" />
 
     <Button
-        android:id="@+id/activity_tipo_alarme_btn_evento"
+        android:id="@+id/btnAjuda"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_alignLeft="@+id/activity_alarme_tipo_alarme_btn_evento"
-        android:layout_below="@+id/activity_alarme_tipo_alarme_btn_evento"
+        android:layout_alignLeft="@+id/btnCadastro"
+        android:layout_below="@+id/btnCadastro"
         android:layout_marginTop="37dp"
-        android:text="@string/activity_tipo_alarme_btn_codigo" />
+        android:text="@string/activity_ajuda" />
 
 </RelativeLayout>

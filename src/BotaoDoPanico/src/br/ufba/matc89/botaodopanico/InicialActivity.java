@@ -53,6 +53,7 @@ public class InicialActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+		//ParseUser.getCurrentUser().get("") // user = new ParseUser();
 		setContentView(R.layout.activity_profile);
 		emailTextView = (TextView) findViewById(R.id.profile_email);
 		nameTextView = (TextView) findViewById(R.id.profile_name);
@@ -86,7 +87,6 @@ public class InicialActivity extends ActionBarActivity {
 				System.out.println("Evento tipo "+tipo);
 				
 				Intent intent = new Intent(InicialActivity.this, TestarEvento.class);
-				//Intent intent = new Intent(InicialActivity.this, AjudaActivity.class);
 				Bundle b = new Bundle();
 				b.putInt("tipo", tipo);
 
@@ -135,11 +135,12 @@ public class InicialActivity extends ActionBarActivity {
 				// FLAG_ACTIVITY_CLEAR_TASK only works on API 11, so if the user
 				// logs out on older devices, we'll just exit.
 				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-					Intent intent = new Intent(InicialActivity.this,
+					/*Intent intent = new Intent(InicialActivity.this,
 							FacebookDispatchActivity.class);
 					intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
 							| Intent.FLAG_ACTIVITY_NEW_TASK);
-					startActivity(intent);
+					startActivity(intent);*/
+					startActivity(new Intent(InicialActivity.this, InstalacaoActivity.class));
 				}
 			}
 			Toast.makeText(InicialActivity.this, "Logout efetuado com sucesso!!!", Toast.LENGTH_LONG).show();
