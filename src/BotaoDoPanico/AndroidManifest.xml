@@ -127,7 +127,7 @@
 		    <category android:name="br.ufba.matc89.botaodopanico" />
 		  </intent-filter>
 		</receiver>
-		<receiver android:name="com.parse.ParsePushBroadcastReceiver" android:exported="false">
+		<receiver android:name="br.ufba.matc89.botaodopanico.PushNotificationReceiver" android:exported="false">
 		  <intent-filter>
 		    <action android:name="com.parse.push.intent.RECEIVE" />
 		    <action android:name="com.parse.push.intent.DELETE" />
