@@ -2,6 +2,7 @@ package br.ufba.matc89.botaodopanico;
 
 import android.support.v7.app.ActionBarActivity;
 import android.app.ExpandableListActivity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -9,13 +10,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
 
 public class AjudaActivity extends ActionBarActivity {
 
 	private ExpandableListView expListAjuda;
+	private Button botaoProx;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,15 @@ public class AjudaActivity extends ActionBarActivity {
 		
 		expListAjuda = (ExpandableListView) findViewById(R.id.expandable_list_ajuda);
 		expListAjuda.setAdapter(new ExpandableListAdapterAjuda());
+		botaoProx = (Button) findViewById(R.id.activity_ajuda_btn_finalizar);
+		
+		botaoProx.setOnClickListener( new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(AjudaActivity.this, TermoDeContratoActivity.class));
+				
+			}
+		});
 	}
 
 	@Override

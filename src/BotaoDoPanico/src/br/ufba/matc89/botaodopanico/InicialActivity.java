@@ -86,6 +86,7 @@ public class InicialActivity extends ActionBarActivity {
 				System.out.println("Evento tipo "+tipo);
 				
 				Intent intent = new Intent(InicialActivity.this, TestarEvento.class);
+				//Intent intent = new Intent(InicialActivity.this, AjudaActivity.class);
 				Bundle b = new Bundle();
 				b.putInt("tipo", tipo);
 
