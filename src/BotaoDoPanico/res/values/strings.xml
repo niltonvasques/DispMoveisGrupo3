@@ -11,6 +11,7 @@
     <string name="app_name">Botão do Pânico</string>
     <string name="action_settings">Settings</string>
     <string name="action_logout">Sair</string>
+    <string name="action_ajuda">Ajuda</string>
     <string name="title_activity_cadastro">Botão do Pânico</string>
     <string name="title_activity_cadastro_alarme">Botão do Pânico</string>
     <string name="title_activity_escolha_tipo_alarme">Botão do Pânico</string>
@@ -20,7 +21,7 @@
     <string name="title_activity_ajuda">Botão do Pânico</string>
     <string name="title_activity_cadastro_destinatario">Botão do Pânico</string>
     <string name="nome">nome</string>
-    <string name="activity_cadastro">Cadastro</string>
+    <string name="activity_cadastro">Cadastro / Login</string>
     <string name="activity_ajuda">Ajuda</string>
     <string name="senha">senha</string>
     <string name="confirmar_senha">confirmar senha</string>
@@ -39,10 +40,13 @@
     <string name="activity_ajuda_title">Ajuda</string>
     <string name="activity_ajuda_btn_finalizar">Finalizar</string>
     <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
-    <string name="ajuda_modo_de_uso">ajuda_modo_de_uso</string>
-    <string name="ajuda_configuracao">ajuda_configuracao</string>
-    <string name="ajuda_sobre">ajuda_sobre</string>
-    
+    <string name="ajuda_modo_de_uso">Para utilizar a aplicação, é necessário seguir os seguintes passos.\n
+        							 1- Criar uma conta.\n
+        							 2- Definir os contatos para os quais os alertas serão enviados.\n
+        							 3- Ativar a aplicação através do botão Ativar na tela principal.\n</string>
+    <string name="ajuda_configuracao">Após realizar o cadastro, selecione o botão configurações para definir os contatos que receberão os alertas de perigo.\nEm seguida defina o padrão do evento para disparar o alarme.\n
+        							Caso queira ativar o aplicativo no modo de detecção do evento, escolha o botão ativar na tela principal e informe a combinação de teclas do evento definida no padrão. </string>
+    <string name="ajuda_sobre">O aplicativo Botão do Pânico foi desenvolvido pelos alunos Nilton Vasques e Priscila Farias, como trabalho da disciplina Aplicações para Dispositivos móveis, ministrada pelo professor Danilo Reis no curso de Ciência da Computação da Universidade Federal da Bahia.</string>
     <string name="activity_instalacao">Instalação</string>
     <string name="activity_tipo_alarme_btn_evento">Evento</string>
     <string name="activity_texto_contrato">Não faça uso indevido de nossos Serviços. Por exemplo, não interfira com nossos Serviços nem tente acessá-los por um método diferente da interface e das instruções que fornecemos. Você pode usar nossos serviços somente conforme permitido por lei, inclusive leis e regulamentos de controle de exportação e reexportação. Podemos suspender ou deixar de fornecer nossos Serviços se você descumprir nossos termos ou políticas ou se estivermos investigando casos de suspeita de má conduta.O uso de nossos Serviços não lhe confere a propriedade sobre direitos de propriedade intelectual sobre os nossos Serviços ou sobre o conteúdo que você acessar. Você não pode usar conteúdos de nossos Serviços a menos que obtenha permissão.</string>

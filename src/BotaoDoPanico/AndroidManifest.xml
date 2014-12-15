@@ -45,6 +45,10 @@
             android:label="@string/app_name" >
         </activity>
         <activity
+            android:name=".LogsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
             android:name=".EscolhaTipoAlarmeActivity"
             android:label="@string/app_name" >
         </activity>

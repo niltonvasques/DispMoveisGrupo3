@@ -72,25 +72,25 @@ public class InicialActivity extends ActionBarActivity {
 		btnLogAlerta.setOnClickListener( new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				ParseObject logObj = new ParseObject("Log");
-				logObj.put("user", ParseUser.getCurrentUser().getObjectId());
-				logObj.put("tipo", "AlertaEnviada");
-				logObj.put("mensagem", "Uma mensagem foi enviada para os contatos desse usu�rio");
-				logObj.put("dataEnvio", new Date());
+//				ParseObject logObj = new ParseObject("Log");
+//				logObj.put("user", ParseUser.getCurrentUser().getObjectId());
+//				logObj.put("tipo", "AlertaEnviada");
+//				logObj.put("mensagem", "Uma mensagem foi enviada para os contatos desse usu�rio");
+//				logObj.put("dataEnvio", new Date());
+//				
+//				logObj.saveInBackground();
+//				
+//				Toast.makeText(InicialActivity.this, "Teste Feito!!!", Toast.LENGTH_LONG).show();
+//				
+//				int tipo = ParseUser.getCurrentUser().getInt("eventoEscolha");
+//				
+//				System.out.println("Evento tipo "+tipo);
+//				Bundle b = new Bundle();
+//				b.putInt("tipo", tipo);
+//
+//				intent.putExtras(b);
 				
-				logObj.saveInBackground();
-				
-				Toast.makeText(InicialActivity.this, "Teste Feito!!!", Toast.LENGTH_LONG).show();
-				
-				int tipo = ParseUser.getCurrentUser().getInt("eventoEscolha");
-				
-				System.out.println("Evento tipo "+tipo);
-				
-				Intent intent = new Intent(InicialActivity.this, TestarEvento.class);
-				Bundle b = new Bundle();
-				b.putInt("tipo", tipo);
-
-				intent.putExtras(b);
+				Intent intent = new Intent(InicialActivity.this, LogsActivity.class);
 				startActivity(intent);
 			}
 		});
@@ -112,6 +112,17 @@ public class InicialActivity extends ActionBarActivity {
 		ParseUser user = ParseUser.getCurrentUser();
 		showProfile(user);
 	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		int tipo = ParseUser.getCurrentUser().getInt("eventoEscolha");
+		if(tipo == 0){
+			btnBackground.setEnabled(false);
+		}else{
+			btnBackground.setEnabled(true);
+		}
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -126,7 +137,8 @@ public class InicialActivity extends ActionBarActivity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		switch (id) {
-		case R.id.action_settings:
+		case R.id.action_ajuda:
+			startActivity(new Intent(InicialActivity.this, AjudaActivity.class));
 			break;
 		case R.id.action_logout:
 			ParseUser user = ParseUser.getCurrentUser();
