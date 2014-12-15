@@ -59,6 +59,7 @@ public class EventoActivity extends ActionBarActivity {
 	{
 		if (i <= 2){
 			if(i == 0){
+				txtCount.setText("9");
 				txtCount.setVisibility(View.VISIBLE);
 				CountDownTimer timer = new CountDownTimer(10000, 1000){
 					@Override
