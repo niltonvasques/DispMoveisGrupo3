@@ -28,7 +28,7 @@ import com.parse.ParseUser;
 public class EventoActivity extends ActionBarActivity {
 	private static final String TAG = "[EventoActivity]";
 	private int tipo, i = 0;
-	private String[] meuArray;
+	private String[] meuArray = { "", "", "" };
 	private Button btnTelaInicial;
 	private TextView txtResposta;
 	private TextView txtCount;
@@ -38,7 +38,6 @@ public class EventoActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_evento);
-		meuArray = new String[3];
 		tipo = ParseUser.getCurrentUser().getInt("eventoEscolha");
 
 		btnTelaInicial = (Button) findViewById(R.id.btnTelaInicial);
@@ -54,6 +53,27 @@ public class EventoActivity extends ActionBarActivity {
 		importaContatosParser();
 	}
 
+	CountDownTimer timer = new CountDownTimer(10000, 1000){
+		@Override
+		public void onFinish() {
+			reiniciarDeteccao();
+		}
+		
+		@Override
+		public void onTick(long millisUntilFinished) {
+			long seconds = millisUntilFinished / 1000;
+			txtCount.setText(""+seconds);
+		}
+	};
+	
+
+	private void reiniciarDeteccao() {
+		i = 0;
+		Log.i(TAG, "Contador de detecção reiniciado");
+		System.out.println(i);
+		txtCount.setVisibility(View.INVISIBLE);
+	}
+	
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event)
 	{
@@ -61,22 +81,8 @@ public class EventoActivity extends ActionBarActivity {
 			if(i == 0){
 				txtCount.setText("9");
 				txtCount.setVisibility(View.VISIBLE);
-				CountDownTimer timer = new CountDownTimer(10000, 1000){
-					@Override
-					public void onFinish() {
-						i = 0;
-						Log.i(TAG, "Contador de detecção reiniciado");
-						System.out.println(i);
-						txtCount.setVisibility(View.INVISIBLE);
-					}
-
-					@Override
-					public void onTick(long millisUntilFinished) {
-						long seconds = millisUntilFinished / 1000;
-						txtCount.setText(""+seconds);
-					}
-				};
-				timer.start();
+				txtResposta.setText("");
+				timer.start();			
 			}
 			if(keyCode == KeyEvent.KEYCODE_VOLUME_DOWN)
 				meuArray[i] = "Baixo";
@@ -94,15 +100,16 @@ public class EventoActivity extends ActionBarActivity {
 			if (validarEvento()){
 				//Alarme correto
 				System.out.println("Alarme correto!");
-				txtResposta.setText("Alarme correto!");
+				txtResposta.setText("Alerta enviado!");
 				Toast.makeText(EventoActivity.this, "Alerta enviado!", Toast.LENGTH_LONG).show();
 				sendAlerta();
+				timer.cancel();
+				reiniciarDeteccao();
 			}else{				
 				//Alarme errado
-				System.out.println("Alarme errado!");
+				System.out.println("Evento incorreto!");
 				Toast.makeText(EventoActivity.this, "Evento incorreto!", Toast.LENGTH_LONG).show();
 			}
-			i = 0;
 		}
 		return true;
 		//return super.onKeyDown(keyCode, event);
