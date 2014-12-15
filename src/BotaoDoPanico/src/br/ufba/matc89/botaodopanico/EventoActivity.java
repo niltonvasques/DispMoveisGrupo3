@@ -6,6 +6,7 @@ import java.util.List;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.v7.app.ActionBarActivity;
 import android.telephony.SmsManager;
 import android.util.Log;
@@ -30,6 +31,7 @@ public class EventoActivity extends ActionBarActivity {
 	private String[] meuArray;
 	private Button btnTelaInicial;
 	private TextView txtResposta;
+	private TextView txtCount;
 	private List<ParseObject> contatos = new ArrayList<ParseObject>();
 
 	@Override
@@ -41,7 +43,7 @@ public class EventoActivity extends ActionBarActivity {
 
 		btnTelaInicial = (Button) findViewById(R.id.btnTelaInicial);
 		txtResposta = (TextView) findViewById(R.id.txtResposta);
-
+		txtCount = (TextView) findViewById(R.id.txtCount);
 		btnTelaInicial.setOnClickListener( new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -56,6 +58,25 @@ public class EventoActivity extends ActionBarActivity {
 	public boolean onKeyDown(int keyCode, KeyEvent event)
 	{
 		if (i <= 2){
+			if(i == 0){
+				txtCount.setVisibility(View.VISIBLE);
+				CountDownTimer timer = new CountDownTimer(10000, 1000){
+					@Override
+					public void onFinish() {
+						i = 0;
+						Log.i(TAG, "Contador de detecção reiniciado");
+						System.out.println(i);
+						txtCount.setVisibility(View.INVISIBLE);
+					}
+
+					@Override
+					public void onTick(long millisUntilFinished) {
+						long seconds = millisUntilFinished / 1000;
+						txtCount.setText(""+seconds);
+					}
+				};
+				timer.start();
+			}
 			if(keyCode == KeyEvent.KEYCODE_VOLUME_DOWN)
 				meuArray[i] = "Baixo";
 			//Toast.makeText(TestarEvento.this, "Volume de Diminuir!", Toast.LENGTH_LONG).show();
@@ -73,12 +94,12 @@ public class EventoActivity extends ActionBarActivity {
 				//Alarme correto
 				System.out.println("Alarme correto!");
 				txtResposta.setText("Alarme correto!");
-				Toast.makeText(EventoActivity.this, "Alarme correto!", Toast.LENGTH_LONG).show();
+				Toast.makeText(EventoActivity.this, "Alerta enviado!", Toast.LENGTH_LONG).show();
 				sendAlerta();
 			}else{				
 				//Alarme errado
 				System.out.println("Alarme errado!");
-				Toast.makeText(EventoActivity.this, "Alarme errado!", Toast.LENGTH_LONG).show();
+				Toast.makeText(EventoActivity.this, "Evento incorreto!", Toast.LENGTH_LONG).show();
 			}
 			i = 0;
 		}

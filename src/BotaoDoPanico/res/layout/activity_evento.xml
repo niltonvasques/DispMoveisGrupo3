@@ -33,6 +33,18 @@
            android:layout_alignRight="@+id/btnTelaInicial"
            android:layout_below="@+id/btnTelaInicial"
            android:layout_marginTop="61dp"
-           android:text="@string/alarme_correto" />
+           android:text="" />
+       
+        <TextView
+           android:id="@+id/txtCount"
+           style="@style/TextTitle2"
+           android:textSize="50dp"
+           android:visibility="invisible"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignRight="@+id/btnTelaInicial"
+           android:layout_below="@+id/btnTelaInicial"
+           android:layout_marginTop="61dp"
+           android:text="5" />
 
 </RelativeLayout>
