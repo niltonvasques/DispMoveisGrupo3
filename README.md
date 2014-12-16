@@ -12,7 +12,7 @@ pré selecionado.
 
 Para instalar o aplicativo o usuário precisa seguir os seguintes passos: 
 
-1. Na tela inicial deve­se clicar em: 
+1. Na tela inicial deve se clicar em: 
   1. Ajuda: caso o usuário deseje olhar o manual de ajuda antes de se cadastrar. 
   2. Cadastrar/Login: caso o usuário deseje se cadastrar no aplicativo ou já tenha 
 cadastro e deseje fazer login com ele. 
