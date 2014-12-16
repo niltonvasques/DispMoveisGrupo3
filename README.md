@@ -13,8 +13,8 @@ pré selecionado.
 Para instalar o aplicativo o usuário precisa seguir os seguintes passos: 
 
 1. Na tela inicial deve­se clicar em: 
-a. Ajuda: caso o usuário deseje olhar o manual de ajuda antes de se cadastrar. 
-b. Cadastrar/Login: caso o usuário deseje se cadastrar no aplicativo ou já tenha 
+⋅⋅1. Ajuda: caso o usuário deseje olhar o manual de ajuda antes de se cadastrar. 
+⋅⋅2. Cadastrar/Login: caso o usuário deseje se cadastrar no aplicativo ou já tenha 
 cadastro e deseje fazer login com ele. 
 
 2. Após a tela “Cadastrar/Login” o usuário será direcionado para a tela dos termos do 
@@ -38,9 +38,9 @@ adicionando os números pela própria aplicação.
 uma dessas opções. 
 
 3. Testar evento cadastrado: após o teste o usuário pode: 
-a. Voltar p/ tela inicial: caso deseje cadastrar o alarme depois. 
-b. Cancelar Escolha: caso queira escolher outro evento disponível 
-c. Salvar: caso tenha realizado o padrão correto de deseje salvar o mesmo. 
+⋅⋅1. Voltar p/ tela inicial: caso deseje cadastrar o alarme depois. 
+⋅⋅2. Cancelar Escolha: caso queira escolher outro evento disponível 
+⋅⋅3. Salvar: caso tenha realizado o padrão correto de deseje salvar o mesmo. 
  
 ### Envio de Mensagem 
 
