@@ -41,6 +41,12 @@ uma dessas opções.
 ⋅⋅1. Voltar p/ tela inicial: caso deseje cadastrar o alarme depois. 
 ⋅⋅2. Cancelar Escolha: caso queira escolher outro evento disponível 
 ⋅⋅3. Salvar: caso tenha realizado o padrão correto de deseje salvar o mesmo. 
+
+1. First ordered list item
+2. Another item
+⋅⋅* Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+⋅⋅1. Ordered sub-list
  
 ### Envio de Mensagem 
 
