@@ -2,11 +2,14 @@
 Nilton Vasques, Priscila Luz 
  
 ### Introdução 
+
 O aplicativo tem como objetivo enviar mensagens de solicitação de socorro para contatos 
 selecionados pelo usuário. 
 Essa mensagem é enviada via sms quando o usuário dentro da app aciona o evento de socorro 
 pré selecionado. 
+
 ### Instalação 
+
 Para instalar o aplicativo o usuário precisa seguir os seguintes passos: 
 
 1. Na tela inicial deve­se clicar em: 
@@ -24,7 +27,8 @@ facebook ou pelo parse, é necessário fornecer um usuário, um email e uma senh
 o evento e adicionar alguns contatos para enviar a mensagem de emergência. Enquanto o 
 usuário não configurar essas informações o botão “Ativar” estará desabilitado. 
 ### Configuração 
-Em configurações deve­se: 
+
+Em configurações deve-se: 
 
 1. Cadastrar os contatos de emergência: essa tela oferece duas formas de cadastrar esses 
 contatos, a primeira é importando os números da agenda do celular e a segunda é 
@@ -39,8 +43,10 @@ b. Cancelar Escolha: caso queira escolher outro evento disponível
 c. Salvar: caso tenha realizado o padrão correto de deseje salvar o mesmo. 
  
 ### Envio de Mensagem 
+
 Na tela inicial deve­se clicar no botão Ativar e informar o evento cadastrado dentro de 9 
 segundos para enviar uma mensagem de socorro. 
+
 ### Log Alerta 
 Nessa tela fica todos os alarmes já enviados pelo o usuário.
 
